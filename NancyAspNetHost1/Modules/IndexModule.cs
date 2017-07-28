@@ -11,8 +11,7 @@ namespace NancyAspNetHost1.Modules
         static string GlobalLog;
         public IndexModule()
         {
-              Get["/MessageCache"] = _ => JsonConvert.SerializeObject( InMemoryMessageCache.Get());
-
+            Get["/MessageCache"] = _ => JsonConvert.SerializeObject( InMemoryMessageCache.Get());
             Get["/Report"] = parameters =>
 			{
 				return View["report"];
@@ -21,15 +20,6 @@ namespace NancyAspNetHost1.Modules
             {
                 return View["QueryTicker"];
             };
-            //         Get["/"] = parameters =>
-            //{
-            //    return View["index"];
-
-            //};
-            //Get["/Report"] = parameters =>
-            //{
-            //    return View["report"];
-            //};
             Get["/"] = parameters => { return HandleQuery(parameters); };
 
 
