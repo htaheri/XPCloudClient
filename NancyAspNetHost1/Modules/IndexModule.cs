@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Microsoft.AspNet.SignalR.StockTicker;
 using Nancy;
 using Newtonsoft.Json;
 
