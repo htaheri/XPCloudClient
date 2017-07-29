@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>ASP.NET SignalR Stock Ticker</title>
+    <title>AJAX Query Report</title>
     <link href="StockTicker.css" rel="stylesheet" />
 </head>
 <body>
@@ -20,15 +20,10 @@
 
     <script src="jquery-1.10.2.min.js"></script>
 <script>
-
-    //test change
-    //new change
-    //Change
-    //Feature1 is created
     var $tbody = $('tbody');
-   
-    setInterval(function () {
-        $.getJSON('/XSClient_Reza/MessageCache', function (data) {
+    
+               setInterval(function () {
+        $.getJSON('/MessageCache', function (data) {
           
             $tbody.html('');
             $.each(data, function (i, d) {
