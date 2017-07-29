@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Nancy;
+using Microsoft.AspNet.SignalR.StockTicker;
 using Newtonsoft.Json;
 
 namespace NancyAspNetHost1.Modules
