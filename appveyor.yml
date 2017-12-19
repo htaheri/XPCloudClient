@@ -6,6 +6,6 @@ build:
   verbosity: minimal
 deploy:
   provider: Environment
-  name: XPCloudClient
+  name: XSClient0
   on:
     branch: master
